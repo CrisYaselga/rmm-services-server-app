@@ -11,19 +11,19 @@ Technical assesment Ninja RMM
 	spring.datasource.username=postgres
 	spring.datasource.password=Admin999
   
-4.- For Compile, run install maven whit Java version 11 or 12, and UTF 8 Encoding
+4.- For Compile, run  maven install whit Java version 11 or 12, and UTF 8 Encoding
 
-5.- Validate that in server database exists a database whit name postgres and in side has a public schema, if not exists create
+5.- Validate that in server database exists a database whit name postgres and in has a public schema, if not exists create
 
 # DEPLOY PROJECT
-1.- Get rmm-services-server-0.0.1-SNAPSHOT.jar in rmm-services-server\target
+1.- Get file rmm-services-server-0.0.1-SNAPSHOT.jar in projectDirectory....\rmm-services-server\target
 
 2.- Validate that java version in system run whit version 11 or 12
 
 3.- Open Command Console and excecute this comand: java -jar rmm-services-server-0.0.1-SNAPSHOT.jar
 
 # USE REST API  
-1.- Firstable need create a Customer this is avalible in POST enpoint: http://localhost:8080/customer 
+1.- First you need create a Customer, this is avalible in POST enpoint: http://localhost:8080/customer 
 
 whit ParamBody, (Example):
 {
@@ -32,7 +32,7 @@ whit ParamBody, (Example):
 "customerPassword":"Cris1704"
 }
 
-2.- Get Token to use others endpoints you must login in follow GET endpoint:  http://localhost:8080/customerLogin whit request param: customerAccount and customerPassword
+2.- Get Token to use others endpoints you must login in GET endpoint:  http://localhost:8080/customerLogin whit request param: customerAccount and customerPassword
 
 Example: http://localhost:8080/customerLogin?customerAccount=CF_YASELGA&customerPassword=Cris1704
 
